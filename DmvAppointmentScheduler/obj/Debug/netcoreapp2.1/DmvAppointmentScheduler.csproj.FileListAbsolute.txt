@@ -73,3 +73,18 @@ C:\Users\mensinkja\OneDrive - National Oilwell Varco\OneDDocuments\Projects\Inte
 C:\Users\mensinkja\OneDrive - National Oilwell Varco\OneDDocuments\Projects\Interviews\Code Challenge\DMV Code Challenge\dmvcodechallenge\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.AssemblyInfo.cs
 C:\Users\mensinkja\OneDrive - National Oilwell Varco\OneDDocuments\Projects\Interviews\Code Challenge\DMV Code Challenge\dmvcodechallenge\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.dll
 C:\Users\mensinkja\OneDrive - National Oilwell Varco\OneDDocuments\Projects\Interviews\Code Challenge\DMV Code Challenge\dmvcodechallenge\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.pdb
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\bin\Debug\netcoreapp2.1\InputData\CustomerData.json
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\bin\Debug\netcoreapp2.1\InputData\TellerData.json
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\bin\Debug\netcoreapp2.1\DmvAppointmentScheduler.deps.json
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\bin\Debug\netcoreapp2.1\DmvAppointmentScheduler.runtimeconfig.json
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\bin\Debug\netcoreapp2.1\DmvAppointmentScheduler.runtimeconfig.dev.json
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\bin\Debug\netcoreapp2.1\DmvAppointmentScheduler.dll
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\bin\Debug\netcoreapp2.1\DmvAppointmentScheduler.pdb
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.csproj.AssemblyReference.cache
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.AssemblyInfoInputs.cache
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.AssemblyInfo.cs
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.csproj.CoreCompileInputs.cache
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.dll
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.pdb
+C:\Users\jesus\Source\Repos\jar25\MyScheduler\DmvAppointmentScheduler\obj\Debug\netcoreapp2.1\DmvAppointmentScheduler.genruntimeconfig.cache

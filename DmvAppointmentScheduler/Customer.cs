@@ -13,6 +13,7 @@ namespace DmvAppointmentScheduler
 
     public class CustomerList
     {
+
         public List<Customer> Customer { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace DmvAppointmentScheduler
 
     public class TellerList
     {
+
         public List<Teller> Teller { get; set; }
     }
 }

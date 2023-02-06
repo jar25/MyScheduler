@@ -41,10 +41,85 @@ namespace DmvAppointmentScheduler
             // Your code goes here .....
             // Test Comment
             // Re-write this method to be more efficient instead of a assigning all customers to the same teller
-            foreach(Customer customer in customers.Customer)
+            /*            foreach (Customer customer in customers.Customer)
+                        {
+                            var appointment = new Appointment(customer, tellers.Teller[0]);
+                            appointmentList.Add(appointment);
+                        }*/
+            //1005
+            List<Teller> specialtyOne = new List<Teller>();
+            List<Teller> specialtyZero = new List<Teller>();
+            List<Teller> specialtyTwo = new List<Teller>();
+            List<Teller> specialtyThree = new List<Teller>();
+            foreach (Teller teller in tellers.Teller)
             {
-                var appointment = new Appointment(customer, tellers.Teller[0]);
-                appointmentList.Add(appointment);
+                if (teller.specialtyType == "0")
+                {
+                    specialtyZero.Add(teller);
+                }
+                if (teller.specialtyType == "1")
+                {
+                    specialtyOne.Add(teller);
+                }
+                if (teller.specialtyType == "2")
+                {
+                    specialtyTwo.Add(teller);
+                }
+                if (teller.specialtyType == "3")
+                {
+                    specialtyThree.Add(teller);
+                }
+            }
+            // Your code goes here .....
+            // Re-write this method to be more efficient instead of a random assignment
+            int i = 0;
+            int j = 0;
+            int k = 0;
+            int l = 0;
+            foreach (Customer customer in customers.Customer)
+            {
+
+                if (customer.type == "4")
+                {
+                    var appointmentZero = new Appointment(customer, specialtyZero[i]);
+                    appointmentList.Add(appointmentZero);
+                    i++;
+                    if (i >= specialtyZero.Count)
+                    {
+                        i = 0;
+                    }
+                }
+                if (customer.type == "1")
+                {
+                    var appointmentOne = new Appointment(customer, specialtyOne[j]);
+                    appointmentList.Add(appointmentOne);
+                    j++;
+                    if (j >= specialtyOne.Count)
+                    {
+                        j = 0;
+                    }
+                }
+                if (customer.type == "2")
+                {
+                    var appointmentTwo = new Appointment(customer, specialtyTwo[k]);
+                    appointmentList.Add(appointmentTwo);
+                    k++;
+                    if (k >= specialtyTwo.Count)
+                    {
+                        k = 0;
+                    }
+                }
+                if (customer.type == "3")
+                {
+                    var appointmentThree = new Appointment(customer, specialtyThree[l]);
+                    appointmentList.Add(appointmentThree);
+                    l++;
+                    if (l >= specialtyThree.Count)
+                    {
+                        l = 0;
+                    }
+                }
+
             }
         }
         static void OutputTotalLengthToConsole()
