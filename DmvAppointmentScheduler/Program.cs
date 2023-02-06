@@ -3,6 +3,7 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data;
 
 namespace DmvAppointmentScheduler
 {
@@ -34,7 +35,26 @@ namespace DmvAppointmentScheduler
             string jsonString = File.ReadAllText(path);
             TellerList tellerData = JsonConvert.DeserializeObject<TellerList>(jsonString);
             return tellerData;
+        }
 
+        public static Teller FindMostFree(List<Teller> list)
+        {
+            if (list.Count == 0)
+            {
+                throw new InvalidOperationException("Empty list");
+            }
+            double maxTime = double.MaxValue;
+            Teller mostFree = null;
+            foreach (Teller type in list)
+            {
+                if (type.currentTime < maxTime)
+                {
+                    mostFree = type;
+                    maxTime = type.currentTime;
+
+                }
+            }
+            return mostFree;
         }
         static void Calculation(CustomerList customers, TellerList tellers)
         {
@@ -81,44 +101,31 @@ namespace DmvAppointmentScheduler
 
                 if (customer.type == "4")
                 {
-                    var appointmentZero = new Appointment(customer, specialtyZero[i]);
+                    Teller mostFree = FindMostFree(specialtyZero);
+                    var appointmentZero = new Appointment(customer, mostFree);
                     appointmentList.Add(appointmentZero);
-                    i++;
-                    if (i >= specialtyZero.Count)
-                    {
-                        i = 0;
-                    }
                 }
                 if (customer.type == "1")
                 {
-                    var appointmentOne = new Appointment(customer, specialtyOne[j]);
+                    Teller mostFree = FindMostFree(specialtyOne);
+                    var appointmentOne = new Appointment(customer, mostFree);
                     appointmentList.Add(appointmentOne);
-                    j++;
-                    if (j >= specialtyOne.Count)
-                    {
-                        j = 0;
-                    }
+
                 }
                 if (customer.type == "2")
                 {
-                    var appointmentTwo = new Appointment(customer, specialtyTwo[k]);
+                    Teller mostFree = FindMostFree(specialtyTwo);
+                    var appointmentTwo = new Appointment(customer, mostFree);
                     appointmentList.Add(appointmentTwo);
-                    k++;
-                    if (k >= specialtyTwo.Count)
-                    {
-                        k = 0;
-                    }
                 }
                 if (customer.type == "3")
                 {
-                    var appointmentThree = new Appointment(customer, specialtyThree[l]);
+                    Teller mostFree = FindMostFree(specialtyThree);
+                    var appointmentThree = new Appointment(customer, mostFree);
                     appointmentList.Add(appointmentThree);
-                    l++;
-                    if (l >= specialtyThree.Count)
-                    {
-                        l = 0;
-                    }
                 }
+
+
 
             }
         }

@@ -21,6 +21,7 @@ namespace DmvAppointmentScheduler
             {
                 this.duration = Convert.ToDouble(customer.duration);
             }
+            teller.currentTime = teller.currentTime + this.duration;
         }
     }
 }

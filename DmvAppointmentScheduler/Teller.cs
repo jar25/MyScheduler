@@ -9,6 +9,7 @@ namespace DmvAppointmentScheduler
         public string id { get; set; }
         public string specialtyType { get; set; }
         public string multiplier { get; set; }
+        public double currentTime { get; set; }
     }
 
     public class TellerList
